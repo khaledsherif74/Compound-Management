@@ -1,0 +1,524 @@
+{
+  "app": {
+    "name": "Compound Management",
+    "tagline": "Gate access control for residential compounds"
+  },
+  "common": {
+    "loading": "Loading",
+    "retry": "Try again",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save changes",
+    "close": "Close",
+    "search": "Search",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "selectPlaceholder": "Select an option",
+    "none": "—",
+    "actions": "Actions",
+    "clearFilters": "Clear filters",
+    "copyFailed": "Could not copy to the clipboard"
+  },
+  "pagination": {
+    "summary": "{{from}}-{{to}} of {{total}}",
+    "page": "Page {{page}} of {{totalPages}}",
+    "previous": "Previous page",
+    "next": "Next page",
+    "rowsPerPage": "Rows per page"
+  },
+  "states": {
+    "emptyTitle": "Nothing here yet",
+    "emptyDescription": "There are no records to show.",
+    "errorTitle": "Something went wrong",
+    "errorDescription": "We could not load this data. Check your connection and try again."
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Switch theme"
+  },
+  "language": {
+    "toggle": "Switch language"
+  },
+  "nav": {
+    "primary": "Main navigation",
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "vehicles": "Vehicles",
+    "myVehicles": "My vehicles",
+    "gates": "Gates",
+    "accessLogs": "Access logs",
+    "myAccessLogs": "My access logs",
+    "auditLogs": "Audit logs",
+    "profile": "Profile",
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar",
+    "openMenu": "Open menu",
+    "skipToContent": "Skip to content",
+    "breadcrumb": "Breadcrumb"
+  },
+  "roles": {
+    "OWNER": "Owner",
+    "SUPERVISOR": "Supervisor",
+    "ROLLER": "Roller",
+    "SUB_ADMIN": "Sub-admin",
+    "ADMIN": "Admin"
+  },
+  "auth": {
+    "loginTitle": "Sign in",
+    "loginSubtitle": "Use your username or phone number.",
+    "identifier": "Username or phone",
+    "password": "Password",
+    "signIn": "Sign in",
+    "contactAdmin": "Forgot your password? Contact your administrator.",
+    "sessionExpired": "Your session has ended. Please sign in again.",
+    "signOut": "Sign out",
+    "resetTitle": "Set your password",
+    "resetSubtitle": "Choose a new password for your account.",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "setPassword": "Set password",
+    "resetSuccessTitle": "Password updated",
+    "resetSuccessBody": "You can now sign in with your new password.",
+    "backToLogin": "Go to sign in",
+    "invalidLinkTitle": "This link is not valid",
+    "invalidLinkBody": "The reset link is missing or incomplete. Ask your administrator to send a new one.",
+    "strengthLabel": "Password strength",
+    "strength": {
+      "0": "Enter a password",
+      "1": "Weak",
+      "2": "Fair",
+      "3": "Good",
+      "4": "Strong"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordMatch": "Passwords do not match",
+    "minLength": "Must be at least {{min}} characters",
+    "maxLength": "Must be at most {{max}} characters",
+    "exactLength": "Must be exactly {{length}} characters",
+    "email": "Enter a valid email address",
+    "intMin": "Enter a whole number, {{min}} or more",
+    "plateLetters": "Use Arabic letters and/or digits only, with single spaces",
+    "plateNumbers": "Digits only (Arabic-Indic digits are accepted)",
+    "directionMin": "Select at least one direction"
+  },
+  "errors": {
+    "network": "Cannot reach the server. Check your connection.",
+    "unknown": "Something went wrong. Please try again."
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {{name}}",
+    "subtitle": "Overview of your compound.",
+    "subtitleOwner": "Your vehicles and recent gate activity.",
+    "refresh": "Refresh",
+    "stats": {
+      "users": "Users",
+      "vehicles": "Vehicles",
+      "gates": "Gates",
+      "logsToday": "Gate events today",
+      "deniedToday": "Denied today",
+      "usage": "Vehicles used",
+      "approved": "Approved",
+      "pending": "Pending",
+      "rejected": "Rejected",
+      "error": "Unavailable"
+    },
+    "quick": {
+      "title": "Quick actions",
+      "addVehicle": "Add a vehicle",
+      "addUser": "Add a user",
+      "addLog": "Add a manual log",
+      "viewLogs": "Open access logs",
+      "myLogs": "My access logs",
+      "viewGates": "View gates",
+      "manageGates": "Manage gates",
+      "auditLogs": "Open audit logs",
+      "profile": "My profile"
+    },
+    "cards": {
+      "latestLogs": "Latest gate events",
+      "latestDenied": "Latest denied events",
+      "pendingVehicles": "Awaiting approval",
+      "myVehicles": "My vehicles",
+      "myLogs": "My recent gate events",
+      "viewAll": "View all",
+      "noLogs": "No gate events yet.",
+      "noDenied": "No denied events.",
+      "noPending": "No vehicles are waiting for approval.",
+      "noVehicles": "You have not registered a vehicle yet.",
+      "noMyLogs": "No gate activity in the last 3 days."
+    }
+  },
+  "statusPages": {
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "The page you are looking for does not exist or was moved.",
+    "forbiddenTitle": "You do not have access",
+    "forbiddenBody": "Your role cannot open this page. Contact an administrator if you need access.",
+    "backHome": "Back to dashboard"
+  },
+  "status": {
+    "active": "Active",
+    "disabled": "Disabled",
+    "PENDING": "Pending",
+    "APPROVED": "Approved",
+    "REJECTED": "Rejected",
+    "ENTRY": "Entry",
+    "EXIT": "Exit",
+    "DENIED": "Denied",
+    "GATE_IN": "Gate in",
+    "GATE_OUT": "Gate out"
+  },
+  "users": {
+    "title": "Users",
+    "subtitle": "Manage resident and staff accounts.",
+    "add": "Add user",
+    "createTitle": "Add user",
+    "editTitle": "Edit user",
+    "createSubmit": "Create user",
+    "emptyTitle": "No users found",
+    "emptyDescription": "Try a different filter or add a new user.",
+    "filters": {
+      "role": "Role",
+      "allRoles": "All roles"
+    },
+    "columns": {
+      "user": "User",
+      "contact": "Contact",
+      "role": "Role",
+      "unit": "Unit",
+      "vehicles": "Vehicles",
+      "status": "Status",
+      "created": "Created"
+    },
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "username": "Username",
+      "phone": "Phone",
+      "email": "Email",
+      "role": "Role",
+      "unitCode": "Unit code",
+      "maxVehicles": "Vehicle limit",
+      "password": "Password"
+    },
+    "hints": {
+      "phone": "Exactly 11 characters.",
+      "maxVehicles": "Leave empty to use the default (2).",
+      "unitLocked": "The unit cannot be changed after creation.",
+      "passwordKeep": "Leave empty to keep the current password.",
+      "passwordMin": "At least 6 characters."
+    },
+    "ownerInfo": "Owners do not receive a password from you. A link to set it is emailed to the address below. The link expires in 1 hour and works once.",
+    "roleChangeOwner": "Changing the role to Owner sends a password setup email. The owner needs an email address, and the unit cannot be set here.",
+    "formerOwnerPassword": "This account was an owner and has no usable password. Set one now.",
+    "actions": {
+      "edit": "Edit",
+      "resend": "Resend password email",
+      "delete": "Delete user",
+      "rowMenu": "Actions for {{name}}",
+      "toggle": "Enable or disable {{name}}",
+      "auditLogs": "View audit logs"
+    },
+    "messages": {
+      "created": "User created.",
+      "createdOwner": "User created. A password setup email was sent.",
+      "recoveryFailed": "User created, but the password email could not be sent.",
+      "resendAction": "Resend",
+      "recoverySent": "Password email sent.",
+      "updated": "User updated.",
+      "noChanges": "No changes to save.",
+      "enabled": "{{name}} enabled.",
+      "disabled": "{{name}} disabled.",
+      "deleted": "User deleted."
+    },
+    "delete": {
+      "title": "Delete {{name}}?",
+      "body": "This permanently removes the account and every vehicle registered to it. This cannot be undone."
+    },
+    "vehiclesUsed": "{{used}} / {{max}}"
+  },
+  "vehicles": {
+    "title": "Vehicles",
+    "titleOwner": "My vehicles",
+    "subtitle": "Registered vehicles and their gate access status.",
+    "subtitleOwner": "Register your vehicles. Staff approve them before the gate lets them in.",
+    "add": "Add vehicle",
+    "createTitle": "Add vehicle",
+    "editTitle": "Edit vehicle",
+    "detailTitle": "Vehicle details",
+    "createSubmit": "Add vehicle",
+    "plateAria": "Plate {{plate}}",
+    "emptyTitle": "No vehicles yet",
+    "emptyDescription": "Registered vehicles will appear here.",
+    "emptyDescriptionOwner": "Add your first vehicle to request gate access.",
+    "limit": {
+      "usage": "{{used}} / {{max}} vehicles used",
+      "reached": "You have reached your vehicle limit ({{max}}). Contact the administrator to raise it.",
+      "approvalNote": "New vehicles are reviewed by staff before they are approved."
+    },
+    "columns": {
+      "plate": "Plate",
+      "vehicle": "Vehicle",
+      "type": "Type",
+      "holder": "Owner / driver",
+      "status": "Status",
+      "created": "Added"
+    },
+    "types": {
+      "OWNER": "Owner vehicle",
+      "EMPLOYEE": "Employee vehicle"
+    },
+    "fields": {
+      "vehicleType": "Vehicle type",
+      "owner": "Owner",
+      "plateLetters": "Plate letters",
+      "plateNumbers": "Plate numbers",
+      "brand": "Brand",
+      "color": "Color",
+      "licenseImage": "License image link",
+      "employeeName": "Employee name",
+      "employeePhone": "Employee phone",
+      "employeeType": "Employee type"
+    },
+    "hints": {
+      "plateLetters": "Arabic letters, and digits if needed. Single spaces allowed.",
+      "plateNumbers": "Digits only.",
+      "licenseImage": "Optional. Paste a link to the image.",
+      "ownerSearch": "Search by name, username, unit or phone."
+    },
+    "ownerSelect": {
+      "placeholder": "Search owners",
+      "noResults": "No owners match your search.",
+      "loading": "Loading owners",
+      "usage": "This owner uses {{used}} / {{max}} vehicles.",
+      "full": "This owner has reached the vehicle limit."
+    },
+    "detail": {
+      "holder": "Holder",
+      "phone": "Phone",
+      "email": "Email",
+      "created": "Added on",
+      "noImage": "No license image provided.",
+      "imageFailed": "The image could not be loaded.",
+      "openImage": "Open image",
+      "employeeKind": "Employee",
+      "viewLogs": "View access logs"
+    },
+    "actions": {
+      "view": "View details",
+      "edit": "Edit",
+      "approve": "Approve",
+      "reject": "Reject",
+      "markPending": "Mark as pending",
+      "delete": "Delete vehicle",
+      "rowMenu": "Actions for {{plate}}"
+    },
+    "messages": {
+      "created": "Vehicle added.",
+      "submitted": "Vehicle submitted for approval.",
+      "updated": "Vehicle updated.",
+      "noChanges": "No changes to save.",
+      "approved": "Vehicle approved.",
+      "rejected": "Vehicle rejected.",
+      "pending": "Vehicle marked as pending.",
+      "deleted": "Vehicle deleted."
+    },
+    "delete": {
+      "title": "Delete vehicle {{plate}}?",
+      "body": "The vehicle will no longer be recognized at the gates. This cannot be undone."
+    }
+  },
+  "gates": {
+    "title": "Gates",
+    "subtitle": "Entry and exit points of the compound.",
+    "add": "Add gate",
+    "createTitle": "Add gate",
+    "editTitle": "Edit gate",
+    "createSubmit": "Create gate",
+    "emptyTitle": "No gates yet",
+    "emptyDescription": "Add the first gate to start organizing access logs by gate.",
+    "emptyDescriptionReadOnly": "No gates have been configured yet.",
+    "fields": {
+      "gateName": "Gate name",
+      "gateCode": "Gate code",
+      "direction": "Directions"
+    },
+    "hints": {
+      "gateCode": "Unique code used to identify this gate in access logs."
+    },
+    "directions": {
+      "In": "In",
+      "Out": "Out"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete gate",
+      "rowMenu": "Actions for {{name}}",
+      "toggle": "Enable or disable {{name}}"
+    },
+    "messages": {
+      "created": "Gate created.",
+      "updated": "Gate updated.",
+      "noChanges": "No changes to save.",
+      "enabled": "{{name}} enabled.",
+      "disabled": "{{name}} disabled.",
+      "deleted": "Gate deleted."
+    },
+    "delete": {
+      "title": "Delete gate {{name}}?",
+      "body": "Past access logs will no longer show this gate. This cannot be undone."
+    }
+  },
+  "accessLogs": {
+    "title": "Access logs",
+    "titleOwner": "My access logs",
+    "subtitle": "Every gate reading and manual entry.",
+    "subtitleOwner": "Gate activity for your vehicles in the last 3 days.",
+    "add": "Add manual log",
+    "createTitle": "Add manual log",
+    "createSubmit": "Save log",
+    "emptyTitle": "No logs found",
+    "emptyDescription": "Try widening the filters.",
+    "emptyDescriptionOwner": "No gate activity for your vehicles in the last 3 days.",
+    "filters": {
+      "action": "Action",
+      "allActions": "All actions",
+      "direction": "Direction",
+      "allDirections": "All directions",
+      "gate": "Gate",
+      "allGates": "All gates",
+      "vehicle": "Filtered to one vehicle",
+      "removeVehicle": "Remove vehicle filter"
+    },
+    "columns": {
+      "time": "Time",
+      "plate": "Plate",
+      "vehicle": "Vehicle",
+      "owner": "Owner",
+      "gate": "Gate",
+      "direction": "Direction",
+      "action": "Action",
+      "reason": "Reason",
+      "image": "Image"
+    },
+    "unit": "Unit {{unit}}",
+    "viewImage": "View image",
+    "imageTitle": "Captured image",
+    "live": {
+      "label": "Auto-refresh",
+      "updated": "Updated",
+      "failed": "Refresh failed",
+      "hint": "Refreshes every 5 seconds while this tab is visible."
+    },
+    "fields": {
+      "plateNumber": "Plate",
+      "action": "Action",
+      "direction": "Direction",
+      "reason": "Reason",
+      "imagePath": "Image link or path"
+    },
+    "hints": {
+      "plateNumber": "The plate as read at the gate.",
+      "imagePath": "Optional."
+    },
+    "messages": {
+      "created": "Log saved."
+    }
+  },
+  "filters": {
+    "from": "From",
+    "to": "To",
+    "rangeInvalid": "End must be after the start."
+  },
+  "audit": {
+    "title": "Audit logs",
+    "subtitle": "Who did what, when and from where.",
+    "emptyTitle": "No audit entries",
+    "emptyDescription": "Try widening the filters.",
+    "filters": {
+      "action": "Action",
+      "allActions": "All actions",
+      "entity": "Entity",
+      "allEntities": "All entities",
+      "userNamed": "User: {{name}}",
+      "user": "Filtered to one user",
+      "removeUser": "Remove user filter"
+    },
+    "columns": {
+      "time": "Time",
+      "actor": "Actor",
+      "action": "Action",
+      "entity": "Entity",
+      "ip": "IP address",
+      "agent": "Device"
+    },
+    "system": "System or unknown",
+    "expand": "Show details",
+    "collapse": "Hide details",
+    "details": {
+      "title": "Details",
+      "none": "No additional details.",
+      "entityId": "Entity ID",
+      "userAgent": "User agent",
+      "filterByUser": "Show only this user's activity"
+    },
+    "json": {
+      "keys": "{{n}} keys",
+      "items": "{{n}} items"
+    },
+    "entities": {
+      "User": "User",
+      "Vehicle": "Vehicle",
+      "Gate": "Gate"
+    },
+    "actions": {
+      "LOGIN": "Signed in",
+      "LOGIN_FAILED": "Sign-in failed",
+      "LOGOUT": "Signed out",
+      "USER_CREATE": "User created",
+      "USER_UPDATE": "User updated",
+      "USER_ENABLE": "User enabled",
+      "USER_DISABLE": "User disabled",
+      "USER_DELETE": "User deleted",
+      "PASSWORD_RECOVERY_EMAIL_SENT": "Password email sent",
+      "PASSWORD_RECOVERY_EMAIL_FAILED": "Password email failed",
+      "PASSWORD_RESET": "Password reset",
+      "VEHICLE_CREATE": "Vehicle added",
+      "VEHICLE_UPDATE": "Vehicle updated",
+      "VEHICLE_STATUS_CHANGE": "Vehicle status changed",
+      "VEHICLE_DELETE": "Vehicle deleted",
+      "GATE_CREATE": "Gate created",
+      "GATE_UPDATE": "Gate updated",
+      "GATE_CHANGE_STATUS": "Gate status changed",
+      "GATE_DELETE": "Gate deleted"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "subtitle": "Your account details and security.",
+    "account": "Account",
+    "security": "Change password",
+    "securityHint": "Use at least 8 characters. You stay signed in on this device.",
+    "fields": {
+      "username": "Username",
+      "phone": "Phone",
+      "email": "Email",
+      "role": "Role",
+      "unit": "Unit",
+      "vehicles": "Vehicles",
+      "status": "Status",
+      "memberSince": "Member since"
+    },
+    "currentPassword": "Current password",
+    "changeSubmit": "Update password",
+    "passwordChanged": "Password updated."
+  }
+}

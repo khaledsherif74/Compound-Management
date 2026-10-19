@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/jpeg" href="/elhelb-logo.jpeg" />
+    <title>Compound Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply persisted theme and language before first paint to avoid a flash.
+      (function () {
+        try {
+          var get = function (k) {
+            var v = localStorage.getItem('cm:' + k);
+            return v ? JSON.parse(v) : null;
+          };
+          var pref = get('theme') || 'system';
+          var dark =
+            pref === 'dark' ||
+            (pref === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var lang = get('lang') === 'ar' ? 'ar' : 'en';
+          var root = document.documentElement;
+          root.classList.toggle('dark', dark);
+          root.style.colorScheme = dark ? 'dark' : 'light';
+          root.lang = lang;
+          root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        } catch (e) {
+          /* storage unavailable: defaults apply */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
